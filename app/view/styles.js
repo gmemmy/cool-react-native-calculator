@@ -6,11 +6,30 @@ const styles = StyleSheet.create({
   },
   upperhalf: {
     flex: 1,
-    backgroundColor: '#DCDCDC'
+    backgroundColor: '#DCDCDC',
+    justifyContent: 'center'
   },
   lowerhalf: {
+    flex: 1.7,
+    flexDirection: 'row',
+  },
+  alignElements: {
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  lowerhalf1: {
+    flex: 3.5,
+    backgroundColor: '#ffff',
+  },
+  lowerhalf2: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#006400',
+  },
+  displayInput: {
+    color: 'black',
+    position: 'absolute',
+    fontSize: 50,
+    marginLeft: 200
   }
 });
 
