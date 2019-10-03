@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // Components
-import BackGroundDisplay from './app/view/index';
+import BackGroundDisplay from './app/view/main/index';
 
  class App extends Component{
    render() {

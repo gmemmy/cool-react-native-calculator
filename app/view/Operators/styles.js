@@ -1,21 +1,16 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  lowerhalf2b: {
-    flex: 1,
-    backgroundColor: '#006400',
-    width: 85,
-    marginTop: 270,
-  },
-  equalToSign: {
-    fontSize: 40,
-    color: '#ffff',
-    fontWeight: 'normal'
-  },
   alignElements: {
     justifyContent: 'center',
     alignItems: 'center'
   },
+  operators: {
+    color: '#636363',
+    fontSize: 30,
+    padding: 25,
+    fontWeight: 'normal',
+  }
 })
 
 export default styles;

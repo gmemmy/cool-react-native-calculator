@@ -10,8 +10,9 @@ const styles = StyleSheet.create({
     color: '#454545',
     fontSize: 40,
     padding: 40,
-    fontWeight: 'normal'
-  }
+    fontWeight: 'normal',
+    justifyContent: 'center'
+  },
 });
 
 export default styles;

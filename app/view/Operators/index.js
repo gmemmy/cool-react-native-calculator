@@ -6,13 +6,24 @@ class Operators extends Component {
   render() {
     return (
       <Fragment>
-        <View style={styles.operations}></View>
+          <TouchableOpacity>
+            <Text style={styles.operators}>C</Text>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Text style={styles.operators}>/</Text>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <Text style={styles.operators}>x</Text>
+          </TouchableOpacity>
         <TouchableOpacity>
-          <View style={[styles.lowerhalf2b, styles.alignElements]}>
-            <Text style={styles.equalToSign}>
-              =
-                </Text>
-          </View>
+          <Text style={styles.operators}>+</Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Text style={styles.operators}>-</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity>
+          <Text style={styles.operators}>=</Text>
         </TouchableOpacity>
       </Fragment>
     )

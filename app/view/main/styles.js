@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   lowerhalf: {
-    flex: 1.3,
+    flex: 2,
     flexDirection: 'row',
   },
   alignElements: {
@@ -24,16 +24,16 @@ const styles = StyleSheet.create({
   },
   lowerhalf2: {
     flex: 1,
-    backgroundColor: '#ffff',
-    marginBottom: 60,
+    backgroundColor: '#DCDCDC',
+    alignItems: 'center'
   },
   displayInput: {
     flex: 2,
-    backgroundColor: 'red',
+    backgroundColor: '#ffff',
   },
   resultDisplay: {
     flex: 1,
-    backgroundColor: 'green'
+    backgroundColor: '#ffff',
   }
 });
 

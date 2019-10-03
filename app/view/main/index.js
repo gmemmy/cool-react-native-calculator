@@ -3,8 +3,8 @@ import { View, Text, TouchableOpacity } from 'react-native';
 import styles from './styles';
 
 // Components
-import Numbers from './Numbers/index';
-import Operators from './Operators/index';
+import Numbers from '../Numbers/index';
+import Operators from '../Operators/index';
 
 class BackGroundDisplay extends Component {
   render() {
@@ -22,8 +22,8 @@ class BackGroundDisplay extends Component {
           <View style={styles.lowerhalf1}>
             <Numbers />
           </View>
-          <View style={[styles.lowerhalf2, styles.alignElements]}>
-           <Operators />
+          <View style={styles.lowerhalf2}>
+              <Operators />
           </View>
         </View>
       </View>
