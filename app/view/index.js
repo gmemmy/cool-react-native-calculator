@@ -1,24 +1,29 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import styles from './styles';
 
+// Components
+import Numbers from './Numbers/index';
+import Operators from './Operators/index';
+
 class BackGroundDisplay extends Component {
-  constructor() {
-    super()
-    this.state = {}
-  }
   render() {
     return (
       <View style={styles.container}>
         <View style={styles.upperhalf}>
-          <Text style={styles.displayInput}>555 x 8</Text>
+          <View style={[styles.displayInput, styles.alignElements]}>
+
+          </View>
+          <View style={[styles.resultDisplay, styles.alignElements]}>
+            
+          </View>
         </View>
         <View style={styles.lowerhalf}>
-          <View style={[styles.lowerhalf1, styles.alignElements]}>
-            <Text>Hello there</Text>
+          <View style={styles.lowerhalf1}>
+            <Numbers />
           </View>
           <View style={[styles.lowerhalf2, styles.alignElements]}>
-
+           <Operators />
           </View>
         </View>
       </View>

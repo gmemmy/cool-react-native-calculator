@@ -7,10 +7,10 @@ const styles = StyleSheet.create({
   upperhalf: {
     flex: 1,
     backgroundColor: '#DCDCDC',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   lowerhalf: {
-    flex: 1.7,
+    flex: 1.3,
     flexDirection: 'row',
   },
   alignElements: {
@@ -19,17 +19,21 @@ const styles = StyleSheet.create({
   },
   lowerhalf1: {
     flex: 3.5,
+    flexDirection: 'row',
     backgroundColor: '#ffff',
   },
   lowerhalf2: {
     flex: 1,
-    backgroundColor: '#006400',
+    backgroundColor: '#ffff',
+    marginBottom: 60,
   },
   displayInput: {
-    color: 'black',
-    position: 'absolute',
-    fontSize: 50,
-    marginLeft: 200
+    flex: 2,
+    backgroundColor: 'red',
+  },
+  resultDisplay: {
+    flex: 1,
+    backgroundColor: 'green'
   }
 });
 
