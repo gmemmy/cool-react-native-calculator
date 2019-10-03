@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
   },
   upperhalf: {
     flex: 1,
-    backgroundColor: '#DCDCDC',
     justifyContent: 'center',
   },
   lowerhalf: {
@@ -30,10 +29,15 @@ const styles = StyleSheet.create({
   displayInput: {
     flex: 2,
     backgroundColor: '#ffff',
+    justifyContent: 'center',
+    marginLeft: 250
   },
   resultDisplay: {
     flex: 1,
     backgroundColor: '#ffff',
+  },
+  displayText: {
+    fontSize: 40
   }
 });
 
