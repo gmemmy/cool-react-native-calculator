@@ -10,7 +10,8 @@ class BackGroundDisplay extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      displayText: ''
+      displayText: '',
+      resultText: ''
     }
   }
   handlePress = (text) => {
@@ -23,14 +24,15 @@ class BackGroundDisplay extends Component {
   }
   clearState = () => {
       let text = this.state.displayText.split('')
-      .pop()
+      text.pop()
     this.setState({
       displayText: text.join('')
     })
   }
-
   calculateResult = () => {
-    const text = this.state.displayText
+    this.setState({
+      resultText: this.state.displayText
+    })
   }
   render() {
     return (
@@ -42,6 +44,9 @@ class BackGroundDisplay extends Component {
             </Text>
           </View>
           <View style={[styles.resultDisplay, styles.alignElements]}>
+            <Text>
+            {this.state.resultText}
+            </Text>
           </View>
         </View>
         <View style={styles.lowerhalf}>

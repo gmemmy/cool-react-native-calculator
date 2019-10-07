@@ -3,9 +3,11 @@ import { View, Text, TouchableOpacity } from 'react-native';
 import styles from './styles';
 
 class Operators extends Component {
-  // calculation = () => {
-  //   let text = this.state.displayText
-  // }
+  calculation = (operations) => {
+    switch(operations) {
+      case '+':
+    }
+  }
   render() {
     const characters = ['C', '/', 'x', '+', '-', '=']
     return (
