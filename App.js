@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
 // Components
-import BackGroundDisplay from './app/view/main/index';
+import Logic from './app/components/index';
 
  class App extends Component{
    render() {
      return (
-      <BackGroundDisplay />
+          <Logic />
      );
    }
 }
