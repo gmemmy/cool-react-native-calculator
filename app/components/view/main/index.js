@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import styles from './styles';
 
 // Components
@@ -14,23 +14,18 @@ class BackGroundDisplay extends Component {
     }
   }
   handlePress = (text) => {
-    if(text === '=') {
-      return this.calculateResult();
-    }
     this.setState({
       displayText: this.state.displayText+text
     })
   }
-  clearState = () => {
+  clearState = (resultText) => {
+    if(resultText) {
       let text = this.state.displayText.split('')
       .pop()
+    }
     this.setState({
       displayText: text.join('')
     })
-  }
-
-  calculateResult = () => {
-    const text = this.state.displayText
   }
   render() {
     return (
@@ -42,6 +37,7 @@ class BackGroundDisplay extends Component {
             </Text>
           </View>
           <View style={[styles.resultDisplay, styles.alignElements]}>
+            
           </View>
         </View>
         <View style={styles.lowerhalf}>
