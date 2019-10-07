@@ -12,9 +12,16 @@ class BackGroundDisplay extends Component {
     this.state = {
       displayText: '',
       resultText: ''
-    }
+    },
+    this.characters = ['C', '/', 'x', '+', '-', '=']
   }
   handlePress = (text) => {
+    const lastCharacter = this.state.displayText.split('').pop()
+    if(this.characters.indexOf(lastCharacter) > 0) return ''
+    if (this.state.text === '')
+    return this.setState({
+      displayText: this.state.displayText + operations
+    })
     if(text === '=') {
       return this.calculateResult();
     }
