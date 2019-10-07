@@ -17,11 +17,11 @@ class BackGroundDisplay extends Component {
     this.setState({
       displayText: this.state.displayText+text
     })
-    clearState = (text) => {
-      this.setState({
-        displayText: this.state.displayText-text
-      })
-    }
+  }
+  clearState = () => {
+    this.setState({
+      displayText: ''
+    })
   }
   render() {
     return (

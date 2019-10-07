@@ -4,17 +4,17 @@ import styles from './styles';
 
 class Operators extends Component {
   render() {
-    const characters = ['C', '/', 'X', '+', '-', '=']
+    const characters = ['C', '/', 'x', '+', '-', '=']
     return (
       <Fragment>
-          <TouchableOpacity onPress={() => this.props.clearState(characters[0])}>
+          <TouchableOpacity onPress={() => this.props.clearState()}>
             <Text style={styles.operators}>C</Text>
           </TouchableOpacity>
         <TouchableOpacity onPress={() => this.props.handlePress(characters[1])}>
             <Text style={styles.operators}>/</Text>
           </TouchableOpacity>
         <TouchableOpacity onPress={() => this.props.handlePress(characters[2])}>
-            <Text style={styles.operators}>X</Text>
+            <Text style={styles.operators}>x</Text>
           </TouchableOpacity>
         <TouchableOpacity onPress={() => this.props.handlePress(characters[3])}>
           <Text style={styles.operators}>+</Text>
