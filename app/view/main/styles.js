@@ -30,14 +30,19 @@ const styles = StyleSheet.create({
     flex: 2,
     backgroundColor: '#ffff',
     justifyContent: 'center',
-    marginLeft: 250
+    alignItems: 'flex-end',
   },
   resultDisplay: {
     flex: 1,
     backgroundColor: '#ffff',
+    justifyContent: 'center',
+    marginLeft: 340
   },
   displayText: {
     fontSize: 40
+  },
+  resultText: {
+    fontSize: 50
   }
 });
 

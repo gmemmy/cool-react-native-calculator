@@ -17,7 +17,7 @@ class BackGroundDisplay extends Component {
             </Text>
           </View>
           <View style={[styles.resultDisplay, styles.alignElements]}>
-            <Text>
+            <Text style={styles.resultText}>
               {this.props.resultDisplay}
             </Text>
           </View>
