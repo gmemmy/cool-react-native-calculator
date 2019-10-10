@@ -15,30 +15,48 @@ class Logic extends Component {
     this.characters = ['C', '/', 'x', '+', '-', '=']
   }
   handlePress = (text) => {
-    const lastCharacter = this.state.displayText.split('').pop()
-    if(this.characters.indexOf(lastCharacter) > 0) return ''
+    // const textArray = this.state.displayText.split('')   
+    // if(text === textArray.length - 1) return '' 
     if (this.state.text === '')
     return this.setState({
       displayResult: this.state.displayText + operations
-    })
+    })  
     if(text === '=') {
-      return this.calculateResult();
+      return this.validate() && this.calculateResult();
     }
     this.setState({
       displayText: this.state.displayText+text
     })
   }
   clearState = () => {
-      let text = this.state.displayText.split('')
-      text.pop()
-    this.setState({
-      displayText: text.join('')
-    })
+    let text = this.state.displayText.split('')
+     if(text.length - 1 <= 0) {
+      this.setState({
+        displayText: '',
+        displayResult: ''
+      })
+    } else {
+        text.pop()
+      this.setState({
+        displayText: text.join(''),
+      })
+    }
   }
   calculateResult = () => {
     this.setState({
-      displayResult: this.state.displayText
+      displayResult: eval(this.state.displayText)
     })
+  }
+  validate = () => {
+    const text = this.state.displayText;
+    switch(text.slice(-1)) {
+      case '+':
+      case '-':
+      case 'x':
+      case '/':
+        return false;
+    }
+    return true;
   }
   render() {
     return (
