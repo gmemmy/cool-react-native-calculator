@@ -37,8 +37,8 @@ class Logic extends Component {
       })
     } else {
         text.pop()
-      this.setState({
-        displayText: text.join(''),
+        this.setState({
+          displayText: text.join(''),
       })
     }
   }
